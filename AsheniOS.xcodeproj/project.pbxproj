@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3476AA79260335E700C3AB26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AA78260335E700C3AB26 /* AppDelegate.m */; };
+		3476AA7C260335E700C3AB26 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AA7B260335E700C3AB26 /* SceneDelegate.m */; };
+		3476AA7F260335E700C3AB26 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AA7E260335E700C3AB26 /* ViewController.m */; };
+		3476AA82260335E700C3AB26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3476AA80260335E700C3AB26 /* Main.storyboard */; };
+		3476AA84260335EA00C3AB26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3476AA83260335EA00C3AB26 /* Assets.xcassets */; };
+		3476AA87260335EA00C3AB26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3476AA85260335EA00C3AB26 /* LaunchScreen.storyboard */; };
+		3476AA8A260335EA00C3AB26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AA89260335EA00C3AB26 /* main.m */; };
+		3476AA94260335EA00C3AB26 /* AsheniOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AA93260335EA00C3AB26 /* AsheniOSTests.m */; };
+		3476AA9F260335EA00C3AB26 /* AsheniOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AA9E260335EA00C3AB26 /* AsheniOSUITests.m */; };
+		3476AAC02603364900C3AB26 /* AshenUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AAB52603364900C3AB26 /* AshenUrls.m */; };
+		3476AAC12603364900C3AB26 /* AshenCallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AAB62603364900C3AB26 /* AshenCallBack.m */; };
+		3476AAC22603364900C3AB26 /* AshenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AAB72603364900C3AB26 /* AshenUtil.m */; };
+		3476AAC32603364900C3AB26 /* AshenConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AABC2603364900C3AB26 /* AshenConst.m */; };
+		3476AADE26033D8E00C3AB26 /* AshenClass.json in Resources */ = {isa = PBXBuildFile; fileRef = 3476AADD26033D8E00C3AB26 /* AshenClass.json */; };
+		3476AAF126089C6E00C3AB26 /* AshenOrderDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AAF026089C6D00C3AB26 /* AshenOrderDictionary.m */; };
+		3476AB6C260DCAE600C3AB26 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 3476AB6B260DCAE600C3AB26 /* Test.m */; };
+		F4F329A7BEA50D07CDFFFC65 /* Pods_AsheniOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31F40BAB39F3276F6C60F1B /* Pods_AsheniOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3476AA90260335EA00C3AB26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3476AA6C260335E700C3AB26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3476AA73260335E700C3AB26;
+			remoteInfo = AsheniOS;
+		};
+		3476AA9B260335EA00C3AB26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3476AA6C260335E700C3AB26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3476AA73260335E700C3AB26;
+			remoteInfo = AsheniOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3476AA74260335E700C3AB26 /* AsheniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsheniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3476AA77260335E700C3AB26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3476AA78260335E700C3AB26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3476AA7A260335E700C3AB26 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3476AA7B260335E700C3AB26 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3476AA7D260335E700C3AB26 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3476AA7E260335E700C3AB26 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3476AA81260335E700C3AB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3476AA83260335EA00C3AB26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3476AA86260335EA00C3AB26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3476AA88260335EA00C3AB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3476AA89260335EA00C3AB26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3476AA8F260335EA00C3AB26 /* AsheniOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsheniOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3476AA93260335EA00C3AB26 /* AsheniOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsheniOSTests.m; sourceTree = "<group>"; };
+		3476AA95260335EA00C3AB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3476AA9A260335EA00C3AB26 /* AsheniOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsheniOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3476AA9E260335EA00C3AB26 /* AsheniOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsheniOSUITests.m; sourceTree = "<group>"; };
+		3476AAA0260335EA00C3AB26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3476AAB52603364900C3AB26 /* AshenUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AshenUrls.m; sourceTree = "<group>"; };
+		3476AAB62603364900C3AB26 /* AshenCallBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AshenCallBack.m; sourceTree = "<group>"; };
+		3476AAB72603364900C3AB26 /* AshenUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AshenUtil.m; sourceTree = "<group>"; };
+		3476AAB82603364900C3AB26 /* AshenConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AshenConst.h; sourceTree = "<group>"; };
+		3476AAB92603364900C3AB26 /* AshenUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AshenUrls.h; sourceTree = "<group>"; };
+		3476AABA2603364900C3AB26 /* AshenUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AshenUtil.h; sourceTree = "<group>"; };
+		3476AABB2603364900C3AB26 /* AshenCallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AshenCallBack.h; sourceTree = "<group>"; };
+		3476AABC2603364900C3AB26 /* AshenConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AshenConst.m; sourceTree = "<group>"; };
+		3476AADD26033D8E00C3AB26 /* AshenClass.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AshenClass.json; sourceTree = SOURCE_ROOT; };
+		3476AAEF26089C6D00C3AB26 /* AshenOrderDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AshenOrderDictionary.h; sourceTree = "<group>"; };
+		3476AAF026089C6D00C3AB26 /* AshenOrderDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AshenOrderDictionary.m; sourceTree = "<group>"; };
+		3476AB6A260DCAE600C3AB26 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		3476AB6B260DCAE600C3AB26 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		9E9DF636AF5319635EB19779 /* Pods-AsheniOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsheniOS.debug.xcconfig"; path = "Target Support Files/Pods-AsheniOS/Pods-AsheniOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C31F40BAB39F3276F6C60F1B /* Pods_AsheniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsheniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E78EC0C1AD9C6D4E440E7317 /* Pods-AsheniOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsheniOS.release.xcconfig"; path = "Target Support Files/Pods-AsheniOS/Pods-AsheniOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3476AA71260335E700C3AB26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F329A7BEA50D07CDFFFC65 /* Pods_AsheniOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3476AA8C260335EA00C3AB26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3476AA97260335EA00C3AB26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056B00B0E08C61A98216F33D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E9DF636AF5319635EB19779 /* Pods-AsheniOS.debug.xcconfig */,
+				E78EC0C1AD9C6D4E440E7317 /* Pods-AsheniOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3476AA6B260335E700C3AB26 = {
+			isa = PBXGroup;
+			children = (
+				3476AA76260335E700C3AB26 /* AsheniOS */,
+				3476AA92260335EA00C3AB26 /* AsheniOSTests */,
+				3476AA9D260335EA00C3AB26 /* AsheniOSUITests */,
+				3476AA75260335E700C3AB26 /* Products */,
+				056B00B0E08C61A98216F33D /* Pods */,
+				6DBD7EBB05BD0F8448772DDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3476AA75260335E700C3AB26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3476AA74260335E700C3AB26 /* AsheniOS.app */,
+				3476AA8F260335EA00C3AB26 /* AsheniOSTests.xctest */,
+				3476AA9A260335EA00C3AB26 /* AsheniOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3476AA76260335E700C3AB26 /* AsheniOS */ = {
+			isa = PBXGroup;
+			children = (
+				3476AADD26033D8E00C3AB26 /* AshenClass.json */,
+				3476AAB42603364900C3AB26 /* utils */,
+				3476AA77260335E700C3AB26 /* AppDelegate.h */,
+				3476AA78260335E700C3AB26 /* AppDelegate.m */,
+				3476AA7A260335E700C3AB26 /* SceneDelegate.h */,
+				3476AA7B260335E700C3AB26 /* SceneDelegate.m */,
+				3476AA7D260335E700C3AB26 /* ViewController.h */,
+				3476AA7E260335E700C3AB26 /* ViewController.m */,
+				3476AA80260335E700C3AB26 /* Main.storyboard */,
+				3476AA83260335EA00C3AB26 /* Assets.xcassets */,
+				3476AA85260335EA00C3AB26 /* LaunchScreen.storyboard */,
+				3476AA88260335EA00C3AB26 /* Info.plist */,
+				3476AA89260335EA00C3AB26 /* main.m */,
+				3476AB6A260DCAE600C3AB26 /* Test.h */,
+				3476AB6B260DCAE600C3AB26 /* Test.m */,
+			);
+			path = AsheniOS;
+			sourceTree = "<group>";
+		};
+		3476AA92260335EA00C3AB26 /* AsheniOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				3476AA93260335EA00C3AB26 /* AsheniOSTests.m */,
+				3476AA95260335EA00C3AB26 /* Info.plist */,
+			);
+			path = AsheniOSTests;
+			sourceTree = "<group>";
+		};
+		3476AA9D260335EA00C3AB26 /* AsheniOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3476AA9E260335EA00C3AB26 /* AsheniOSUITests.m */,
+				3476AAA0260335EA00C3AB26 /* Info.plist */,
+			);
+			path = AsheniOSUITests;
+			sourceTree = "<group>";
+		};
+		3476AAB42603364900C3AB26 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				3476AABB2603364900C3AB26 /* AshenCallBack.h */,
+				3476AAB62603364900C3AB26 /* AshenCallBack.m */,
+				3476AAB92603364900C3AB26 /* AshenUrls.h */,
+				3476AAB52603364900C3AB26 /* AshenUrls.m */,
+				3476AABA2603364900C3AB26 /* AshenUtil.h */,
+				3476AAB72603364900C3AB26 /* AshenUtil.m */,
+				3476AAB82603364900C3AB26 /* AshenConst.h */,
+				3476AABC2603364900C3AB26 /* AshenConst.m */,
+				3476AAEF26089C6D00C3AB26 /* AshenOrderDictionary.h */,
+				3476AAF026089C6D00C3AB26 /* AshenOrderDictionary.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		6DBD7EBB05BD0F8448772DDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C31F40BAB39F3276F6C60F1B /* Pods_AsheniOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3476AA73260335E700C3AB26 /* AsheniOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3476AAA3260335EA00C3AB26 /* Build configuration list for PBXNativeTarget "AsheniOS" */;
+			buildPhases = (
+				C94E0A88794DE84D3792D0D3 /* [CP] Check Pods Manifest.lock */,
+				3476AAD326033B4C00C3AB26 /* ShellScript */,
+				3476AA70260335E700C3AB26 /* Sources */,
+				3476AA71260335E700C3AB26 /* Frameworks */,
+				3476AA72260335E700C3AB26 /* Resources */,
+				DC71B6409922AFCFCC5A1A97 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsheniOS;
+			productName = AsheniOS;
+			productReference = 3476AA74260335E700C3AB26 /* AsheniOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3476AA8E260335EA00C3AB26 /* AsheniOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3476AAA6260335EA00C3AB26 /* Build configuration list for PBXNativeTarget "AsheniOSTests" */;
+			buildPhases = (
+				3476AA8B260335EA00C3AB26 /* Sources */,
+				3476AA8C260335EA00C3AB26 /* Frameworks */,
+				3476AA8D260335EA00C3AB26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3476AA91260335EA00C3AB26 /* PBXTargetDependency */,
+			);
+			name = AsheniOSTests;
+			productName = AsheniOSTests;
+			productReference = 3476AA8F260335EA00C3AB26 /* AsheniOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3476AA99260335EA00C3AB26 /* AsheniOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3476AAA9260335EA00C3AB26 /* Build configuration list for PBXNativeTarget "AsheniOSUITests" */;
+			buildPhases = (
+				3476AA96260335EA00C3AB26 /* Sources */,
+				3476AA97260335EA00C3AB26 /* Frameworks */,
+				3476AA98260335EA00C3AB26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3476AA9C260335EA00C3AB26 /* PBXTargetDependency */,
+			);
+			name = AsheniOSUITests;
+			productName = AsheniOSUITests;
+			productReference = 3476AA9A260335EA00C3AB26 /* AsheniOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3476AA6C260335E700C3AB26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					3476AA73260335E700C3AB26 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					3476AA8E260335EA00C3AB26 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3476AA73260335E700C3AB26;
+					};
+					3476AA99260335EA00C3AB26 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3476AA73260335E700C3AB26;
+					};
+				};
+			};
+			buildConfigurationList = 3476AA6F260335E700C3AB26 /* Build configuration list for PBXProject "AsheniOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3476AA6B260335E700C3AB26;
+			productRefGroup = 3476AA75260335E700C3AB26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3476AA73260335E700C3AB26 /* AsheniOS */,
+				3476AA8E260335EA00C3AB26 /* AsheniOSTests */,
+				3476AA99260335EA00C3AB26 /* AsheniOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3476AA72260335E700C3AB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3476AADE26033D8E00C3AB26 /* AshenClass.json in Resources */,
+				3476AA87260335EA00C3AB26 /* LaunchScreen.storyboard in Resources */,
+				3476AA84260335EA00C3AB26 /* Assets.xcassets in Resources */,
+				3476AA82260335E700C3AB26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3476AA8D260335EA00C3AB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3476AA98260335EA00C3AB26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3476AAD326033B4C00C3AB26 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\necho \"python3 read_class.py\"\npython3 read_class.py\n\n";
+		};
+		C94E0A88794DE84D3792D0D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AsheniOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC71B6409922AFCFCC5A1A97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsheniOS/Pods-AsheniOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AsheniOS/Pods-AsheniOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AsheniOS/Pods-AsheniOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3476AA70260335E700C3AB26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3476AA7F260335E700C3AB26 /* ViewController.m in Sources */,
+				3476AAC02603364900C3AB26 /* AshenUrls.m in Sources */,
+				3476AAC12603364900C3AB26 /* AshenCallBack.m in Sources */,
+				3476AA79260335E700C3AB26 /* AppDelegate.m in Sources */,
+				3476AA8A260335EA00C3AB26 /* main.m in Sources */,
+				3476AB6C260DCAE600C3AB26 /* Test.m in Sources */,
+				3476AAC32603364900C3AB26 /* AshenConst.m in Sources */,
+				3476AAF126089C6E00C3AB26 /* AshenOrderDictionary.m in Sources */,
+				3476AAC22603364900C3AB26 /* AshenUtil.m in Sources */,
+				3476AA7C260335E700C3AB26 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3476AA8B260335EA00C3AB26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3476AA94260335EA00C3AB26 /* AsheniOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3476AA96260335EA00C3AB26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3476AA9F260335EA00C3AB26 /* AsheniOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3476AA91260335EA00C3AB26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3476AA73260335E700C3AB26 /* AsheniOS */;
+			targetProxy = 3476AA90260335EA00C3AB26 /* PBXContainerItemProxy */;
+		};
+		3476AA9C260335EA00C3AB26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3476AA73260335E700C3AB26 /* AsheniOS */;
+			targetProxy = 3476AA9B260335EA00C3AB26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3476AA80260335E700C3AB26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3476AA81260335E700C3AB26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3476AA85260335EA00C3AB26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3476AA86260335EA00C3AB26 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3476AAA1260335EA00C3AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3476AAA2260335EA00C3AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3476AAA4260335EA00C3AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9DF636AF5319635EB19779 /* Pods-AsheniOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
+				INFOPLIST_FILE = AsheniOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashen.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3476AAA5260335EA00C3AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E78EC0C1AD9C6D4E440E7317 /* Pods-AsheniOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
+				INFOPLIST_FILE = AsheniOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashen.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3476AAA7260335EA00C3AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
+				INFOPLIST_FILE = AsheniOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RongCloud.im.RongSight.AsheniOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsheniOS.app/AsheniOS";
+			};
+			name = Debug;
+		};
+		3476AAA8260335EA00C3AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
+				INFOPLIST_FILE = AsheniOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RongCloud.im.RongSight.AsheniOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsheniOS.app/AsheniOS";
+			};
+			name = Release;
+		};
+		3476AAAA260335EA00C3AB26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
+				INFOPLIST_FILE = AsheniOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RongCloud.im.RongSight.AsheniOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AsheniOS;
+			};
+			name = Debug;
+		};
+		3476AAAB260335EA00C3AB26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9CVMN4UZK4;
+				INFOPLIST_FILE = AsheniOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RongCloud.im.RongSight.AsheniOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AsheniOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3476AA6F260335E700C3AB26 /* Build configuration list for PBXProject "AsheniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3476AAA1260335EA00C3AB26 /* Debug */,
+				3476AAA2260335EA00C3AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3476AAA3260335EA00C3AB26 /* Build configuration list for PBXNativeTarget "AsheniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3476AAA4260335EA00C3AB26 /* Debug */,
+				3476AAA5260335EA00C3AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3476AAA6260335EA00C3AB26 /* Build configuration list for PBXNativeTarget "AsheniOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3476AAA7260335EA00C3AB26 /* Debug */,
+				3476AAA8260335EA00C3AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3476AAA9260335EA00C3AB26 /* Build configuration list for PBXNativeTarget "AsheniOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3476AAAA260335EA00C3AB26 /* Debug */,
+				3476AAAB260335EA00C3AB26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3476AA6C260335E700C3AB26 /* Project object */;
+}

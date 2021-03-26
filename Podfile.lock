@@ -1,0 +1,26 @@
+PODS:
+  - GCDWebServer/Core (3.5.2)
+  - GCDWebServer/WebDAV (3.5.2):
+    - GCDWebServer/Core
+  - GCDWebServer/WebUploader (3.5.2):
+    - GCDWebServer/Core
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - GCDWebServer/Core (= 3.5.2)
+  - GCDWebServer/WebDAV (= 3.5.2)
+  - GCDWebServer/WebUploader (= 3.5.2)
+  - YYModel
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GCDWebServer
+    - YYModel
+
+SPEC CHECKSUMS:
+  GCDWebServer: ead88cd14596dd4eae4f5830b8877c87c8728990
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 7dbff2a1b6c899e7c64dc65cf15e9b743671578f
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,16 @@
+{
+    "Test.h": [
+        {
+            "interface_name": "/getUser:age:", 
+            "param_list": [
+                "name", 
+                "age"
+            ], 
+            "param_type_list": [
+                "NSString", 
+                "int"
+            ], 
+            "return_type": "NSMutableDictionary"
+        }
+    ]
+}

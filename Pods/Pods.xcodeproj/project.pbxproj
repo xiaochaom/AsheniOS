@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		106468F1D026BCEF8F0DBD89BFD48494 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01696E3F214D178172B16FF754ABBDD1 /* Foundation.framework */; };
+		1265940E6F208C395AACF2DE5A928EFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01696E3F214D178172B16FF754ABBDD1 /* Foundation.framework */; };
+		141D480033FFF362E456086BDAF2E902 /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DC202B16784AB46D8FAF08453170F803 /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199B9B8BE4A3C277C8151766B7E50A52 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E05F05605C90E95DD4978AEDA88D79BC /* GCDWebServer.m */; };
+		2013CBABA76DD79EE796E7F569BE8D53 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 288748FA17EC045BE0DD636A13E1C788 /* GCDWebServerFunctions.m */; };
+		219322D73B873BFA5511CB496DA3F8C0 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B6217A3DAC809A9957762AF7DF1224 /* CoreFoundation.framework */; };
+		21D1B921213C3724A18648545CE7775C /* Pods-AsheniOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28341131457C645E278CFC4F62E0F878 /* Pods-AsheniOS-dummy.m */; };
+		2AC412DFC6F9F0FA398731C398309BB7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF071F7BF2934640491DA885D4863353 /* CFNetwork.framework */; };
+		33FA2FB7B7BBAF0D7ED485FDF46612D3 /* GCDWebUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC0223024B66A3EEA7DF593461C3203 /* GCDWebUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A1D7467C800A0342CA4A1A11F864FE3 /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 021C18D8FEDA238F7933060EFC439C43 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C640E568D13FA0A103376578B43C14F /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 600C3CFD7B834FEAF01D57207EBF2E74 /* GCDWebServerErrorResponse.m */; };
+		4381C0C2775DF318539274584275BCB1 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8264D5621F0D638B334AA48DB6FF383 /* NSObject+YYModel.m */; };
+		4694EB7427EC9AF28853085BB9A5EA35 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1F4CC2EB183E222C242FDDCEDFCBF /* GCDWebServerFileRequest.m */; };
+		48B1F9E3A1F1DB4E55664552707D0BC5 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A522C2CACFA356CA0C47605A9499C8B /* GCDWebServerDataResponse.m */; };
+		4A5FC774D0450A4A8FFE04262024A0E9 /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = B35223C0FF2859768F49638381A1A0F5 /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DF6A7350ADD17BD0268A411CB5BD12B /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD42C79E547E54CA3BBC324703533A4 /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52BDB3A4765CBB8AFB57B09F3335F5F8 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A2A1B137942F1411983FAA32E528AB3 /* GCDWebServerRequest.m */; };
+		5395EDA5B90E1D692F3C83BF4892CBC4 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E35AD3387060530E3E87772C710344B6 /* GCDWebServerDataRequest.m */; };
+		539B513546329AAA18439DA255170947 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FA05954EFEB319604C9C0456BA0EA82A /* GCDWebServerURLEncodedFormRequest.m */; };
+		58F90D363D0B57AA96BE11F4ED07E684 /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AD8010E59CFE2ABB4F31746011D30C19 /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5924C06541A0430C69AC0A4B68CF1004 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF2830CA9D3773A70689F7291E13E54 /* GCDWebServerStreamedResponse.m */; };
+		5AE0F3D55BF5DF3D20D6C5054537EF92 /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7B095795A9AE1FC6112EF9E3DC5E79 /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6218AABA7D60EEE58F24657D65595CC1 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B4244819E142D056FBD0BA9F0E93C339 /* YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67DBF6A087D7F6E3170045521239100E /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E12E7C5DF2E2C7A0165462992A605C /* GCDWebServer-dummy.m */; };
+		71999101EF4679D675412640441098A5 /* GCDWebDAVServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F3F740189EDF1F209F0788803B3AA52 /* GCDWebDAVServer.m */; settings = {COMPILER_FLAGS = "-I$(SDKROOT)/usr/include/libxml2"; }; };
+		77CDE68353EE44D46F35055431DD88A2 /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFF1023F8AAB21436382CDF9FBE5BB6 /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		782F0388F7A9B7DEDB103200B978C81B /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FC55B25CC32D673EC8151B39A773019F /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8343D236668058C696596A0A7E6A9CDC /* GCDWebDAVServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 10E154BECACA6AA9E9277881EA711718 /* GCDWebDAVServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DD422F65B364DB9C1EAE655653561A7 /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D457F383FB6D2C1509706B16DE4BC7B /* YYModel-dummy.m */; };
+		8F15A5799BB97B7F7A94B864CD40D388 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216DEBCBD132830481AD5D3718DE30BA /* MobileCoreServices.framework */; };
+		905A5BD8B0732532496FAA4BCA58958C /* YYModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67BA8995DF8D1407A4172BCCC23EEA53 /* YYModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		945B2781FCAB731D13656981261208D5 /* GCDWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B1BD9A00C8C6E70354FCA1B14449C425 /* GCDWebUploader.bundle */; };
+		A06F8E2BDB1C1C5627C02E09756BD055 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D9F4DDB1D43147BD4E8681B9DA73B8 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA93F789F54610A381739B11FB06791B /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D1BD5AF9CBA8A02EBCF8F463D6BD032A /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AAA1AF1672A73A4365536A7904DECCA9 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AB9E14BA1F6741DCBA58FFA85C284A /* GCDWebServerFileResponse.m */; };
+		AD75E96FED0D33D295F3D3A8BF56A9F8 /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BC7452B37D9433726739EDEB93CED8E3 /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB3A74BFDE9C96EBC8BF94F9C547850D /* GCDWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 076CA1252A2F725DCDCF46B66BFAEA64 /* GCDWebUploader.m */; };
+		BD17EEB24B2AEF4A2472B1D707B4D06B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01696E3F214D178172B16FF754ABBDD1 /* Foundation.framework */; };
+		C29C1BF86EA5C3DBD7AB893ACF8E2B17 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C670A00F396B2C43EF56C88E0E67C2F3 /* YYClassInfo.m */; };
+		C619F8003979DDDC7CAA8FBD67D9B6BE /* Pods-AsheniOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B6C97918A2EED0E5631183DFEBAFF14 /* Pods-AsheniOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9B7A1EB4C8AA7B0990F4E01DC39FC0C /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DB99BBCC2AE641146CE542C7496262E /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB07A01C277A01FFB0E88BD77A94D9F2 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF75AF5147FFD8BFB5E3849F39061625 /* GCDWebServerMultiPartFormRequest.m */; };
+		D2E0AD6D3BA85120A6873081B49638CB /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C592F8D859995825DE88A11C0C162A /* GCDWebServerResponse.m */; };
+		D6BA8F39F7E13E77682013B6DFF1A3E3 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = EA5AC761961A4F78D6FC27A8AA03B4F7 /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA40AA8CBB6200B48F32ED61B3D071EA /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA375E7DD653ED5822C291325C4E16A /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6D87BF8A761843BCA300CF4360360E /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 47FAA116DAC2A4452BD61DCDDB0032DF /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFCC647135CFFD020A13EE21CB669975 /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3849659F84347C4DED30A3C1A1A44BB5 /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB9F779B420C2EADFC026FAA2114CED6 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC170322DE4FF502F9CFB512804B39D /* GCDWebServerConnection.m */; };
+		FBA65AB54B52FA5A337C0FF228DA4686 /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = B660AA9ACDC923928D7CF32EA1CA063F /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC710E3C58B6BD2EE4FC743307BEF13 /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 366CF28BFD9023B3845F62F3CAFC773A /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25F4CA5DA28BB47B6A3B7B01AA1E0687 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD904F32069787EFB2DFFE05EB82F5BD;
+			remoteInfo = GCDWebServer;
+		};
+		E31447C93BBF44FEEF64DDD0E1BF887D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B44807A12996D487A4A591A481D6A0;
+			remoteInfo = YYModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01696E3F214D178172B16FF754ABBDD1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		021C18D8FEDA238F7933060EFC439C43 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerStreamedResponse.h; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		076CA1252A2F725DCDCF46B66BFAEA64 /* GCDWebUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebUploader.m; path = GCDWebUploader/GCDWebUploader.m; sourceTree = "<group>"; };
+		0DFF1023F8AAB21436382CDF9FBE5BB6 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerErrorResponse.h; path = GCDWebServer/Responses/GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		10E154BECACA6AA9E9277881EA711718 /* GCDWebDAVServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebDAVServer.h; path = GCDWebDAVServer/GCDWebDAVServer.h; sourceTree = "<group>"; };
+		153473EA987C32BBEFACE861903CBE19 /* Pods_AsheniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AsheniOS.framework; path = "Pods-AsheniOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DFB61212C40B51FEBA7E05A45335AE4 /* GCDWebServer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GCDWebServer-Info.plist"; sourceTree = "<group>"; };
+		216DEBCBD132830481AD5D3718DE30BA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		28341131457C645E278CFC4F62E0F878 /* Pods-AsheniOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AsheniOS-dummy.m"; sourceTree = "<group>"; };
+		288748FA17EC045BE0DD636A13E1C788 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFunctions.m; path = GCDWebServer/Core/GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		2CBAAA3BAF38DA0E4FA0DC9421D27A23 /* YYModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YYModel-Info.plist"; sourceTree = "<group>"; };
+		2EC170322DE4FF502F9CFB512804B39D /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
+		2F3F740189EDF1F209F0788803B3AA52 /* GCDWebDAVServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebDAVServer.m; path = GCDWebDAVServer/GCDWebDAVServer.m; sourceTree = "<group>"; };
+		2FA375E7DD653ED5822C291325C4E16A /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		366CF28BFD9023B3845F62F3CAFC773A /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileResponse.h; path = GCDWebServer/Responses/GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		3849659F84347C4DED30A3C1A1A44BB5 /* GCDWebServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = GCDWebServer/Core/GCDWebServer.h; sourceTree = "<group>"; };
+		3F7B095795A9AE1FC6112EF9E3DC5E79 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerMultiPartFormRequest.h; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		430C2918FEF2381185030E7A74D2246A /* YYModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YYModel.modulemap; sourceTree = "<group>"; };
+		47FAA116DAC2A4452BD61DCDDB0032DF /* GCDWebServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerRequest.h; path = GCDWebServer/Core/GCDWebServerRequest.h; sourceTree = "<group>"; };
+		4A3D1ADBC4BAECC38BAB57CE37F7B81B /* Pods-AsheniOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AsheniOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		56D6A1CE2846E1DA8D85CFD290B7EE4B /* GCDWebServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCDWebServer.modulemap; sourceTree = "<group>"; };
+		5A522C2CACFA356CA0C47605A9499C8B /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataResponse.m; path = GCDWebServer/Responses/GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		5F0619D82F39C2A4BB953D4CAF23A846 /* Pods-AsheniOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AsheniOS-frameworks.sh"; sourceTree = "<group>"; };
+		600C3CFD7B834FEAF01D57207EBF2E74 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		64B6217A3DAC809A9957762AF7DF1224 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		67BA8995DF8D1407A4172BCCC23EEA53 /* YYModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-umbrella.h"; sourceTree = "<group>"; };
+		67D9F4DDB1D43147BD4E8681B9DA73B8 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
+		6D457F383FB6D2C1509706B16DE4BC7B /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		6D8E86F3A8BCF39E212A97E0C0F72ADF /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		6DB1F4CC2EB183E222C242FDDCEDFCBF /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileRequest.m; path = GCDWebServer/Requests/GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		7DB99BBCC2AE641146CE542C7496262E /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerURLEncodedFormRequest.h; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		82E12E7C5DF2E2C7A0165462992A605C /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
+		9A2A1B137942F1411983FAA32E528AB3 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerRequest.m; path = GCDWebServer/Core/GCDWebServerRequest.m; sourceTree = "<group>"; };
+		9B6C97918A2EED0E5631183DFEBAFF14 /* Pods-AsheniOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AsheniOS-umbrella.h"; sourceTree = "<group>"; };
+		9CFCF66BB73F9DF6DF04CFCE62AF2B8B /* Pods-AsheniOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AsheniOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AD8010E59CFE2ABB4F31746011D30C19 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileRequest.h; path = GCDWebServer/Requests/GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		B1BD9A00C8C6E70354FCA1B14449C425 /* GCDWebUploader.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GCDWebUploader.bundle; path = GCDWebUploader/GCDWebUploader.bundle; sourceTree = "<group>"; };
+		B1F0D95049854206C449F83E1DF9C488 /* GCDWebServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-prefix.pch"; sourceTree = "<group>"; };
+		B35223C0FF2859768F49638381A1A0F5 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerConnection.h; path = GCDWebServer/Core/GCDWebServerConnection.h; sourceTree = "<group>"; };
+		B4244819E142D056FBD0BA9F0E93C339 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		B4F80BD362062DCF83DE9013096E2B22 /* GCDWebServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.debug.xcconfig; sourceTree = "<group>"; };
+		B60A64EBEC49EB7CA3C6B7C03CDCF325 /* Pods-AsheniOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AsheniOS.release.xcconfig"; sourceTree = "<group>"; };
+		B660AA9ACDC923928D7CF32EA1CA063F /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		B68C1052A3B51DBCF7D960F898AAFA95 /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCDWebServer.framework; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C05CE20CDF2EAA2074C380DE111A03 /* Pods-AsheniOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AsheniOS.modulemap"; sourceTree = "<group>"; };
+		BC7452B37D9433726739EDEB93CED8E3 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataResponse.h; path = GCDWebServer/Responses/GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		BF071F7BF2934640491DA885D4863353 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		BFD42C79E547E54CA3BBC324703533A4 /* GCDWebServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-umbrella.h"; sourceTree = "<group>"; };
+		C670A00F396B2C43EF56C88E0E67C2F3 /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		C8C592F8D859995825DE88A11C0C162A /* GCDWebServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerResponse.m; path = GCDWebServer/Core/GCDWebServerResponse.m; sourceTree = "<group>"; };
+		C9B2E7F0BECD32B0DF1C8BE37DA2E772 /* GCDWebServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.release.xcconfig; sourceTree = "<group>"; };
+		CAC0223024B66A3EEA7DF593461C3203 /* GCDWebUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebUploader.h; path = GCDWebUploader/GCDWebUploader.h; sourceTree = "<group>"; };
+		D1BD5AF9CBA8A02EBCF8F463D6BD032A /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		D3AB9E14BA1F6741DCBA58FFA85C284A /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		D3AF343D84210AE8644B51938D8F8D2C /* YYModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.release.xcconfig; sourceTree = "<group>"; };
+		D4F36ADEBF8537C2947DA3732FFC00A2 /* Pods-AsheniOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AsheniOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC202B16784AB46D8FAF08453170F803 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerResponse.h; path = GCDWebServer/Core/GCDWebServerResponse.h; sourceTree = "<group>"; };
+		E05F05605C90E95DD4978AEDA88D79BC /* GCDWebServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServer.m; path = GCDWebServer/Core/GCDWebServer.m; sourceTree = "<group>"; };
+		E35AD3387060530E3E87772C710344B6 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataRequest.m; path = GCDWebServer/Requests/GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YYModel.framework; path = YYModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8264D5621F0D638B334AA48DB6FF383 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		EA5AC761961A4F78D6FC27A8AA03B4F7 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFunctions.h; path = GCDWebServer/Core/GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		EAC8B9FCF5C0E0557260D4E4C37C881E /* Pods-AsheniOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AsheniOS-Info.plist"; sourceTree = "<group>"; };
+		EF75AF5147FFD8BFB5E3849F39061625 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerMultiPartFormRequest.m; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		F6D6A97507D34400277B4082B5E1B077 /* YYModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.debug.xcconfig; sourceTree = "<group>"; };
+		FA05954EFEB319604C9C0456BA0EA82A /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		FC55B25CC32D673EC8151B39A773019F /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataRequest.h; path = GCDWebServer/Requests/GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		FCF2830CA9D3773A70689F7291E13E54 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C0607E9A12AA339D7A620D4B74CD81D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD17EEB24B2AEF4A2472B1D707B4D06B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55E437CCA6499F74216E93A0F97E79EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AC412DFC6F9F0FA398731C398309BB7 /* CFNetwork.framework in Frameworks */,
+				1265940E6F208C395AACF2DE5A928EFB /* Foundation.framework in Frameworks */,
+				8F15A5799BB97B7F7A94B864CD40D388 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEED147B124BE7EB0C717F29107F404 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				219322D73B873BFA5511CB496DA3F8C0 /* CoreFoundation.framework in Frameworks */,
+				106468F1D026BCEF8F0DBD89BFD48494 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F9D54FF4D48C2D18675455816AE4357 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3849659F84347C4DED30A3C1A1A44BB5 /* GCDWebServer.h */,
+				E05F05605C90E95DD4978AEDA88D79BC /* GCDWebServer.m */,
+				B35223C0FF2859768F49638381A1A0F5 /* GCDWebServerConnection.h */,
+				2EC170322DE4FF502F9CFB512804B39D /* GCDWebServerConnection.m */,
+				FC55B25CC32D673EC8151B39A773019F /* GCDWebServerDataRequest.h */,
+				E35AD3387060530E3E87772C710344B6 /* GCDWebServerDataRequest.m */,
+				BC7452B37D9433726739EDEB93CED8E3 /* GCDWebServerDataResponse.h */,
+				5A522C2CACFA356CA0C47605A9499C8B /* GCDWebServerDataResponse.m */,
+				0DFF1023F8AAB21436382CDF9FBE5BB6 /* GCDWebServerErrorResponse.h */,
+				600C3CFD7B834FEAF01D57207EBF2E74 /* GCDWebServerErrorResponse.m */,
+				AD8010E59CFE2ABB4F31746011D30C19 /* GCDWebServerFileRequest.h */,
+				6DB1F4CC2EB183E222C242FDDCEDFCBF /* GCDWebServerFileRequest.m */,
+				366CF28BFD9023B3845F62F3CAFC773A /* GCDWebServerFileResponse.h */,
+				D3AB9E14BA1F6741DCBA58FFA85C284A /* GCDWebServerFileResponse.m */,
+				EA5AC761961A4F78D6FC27A8AA03B4F7 /* GCDWebServerFunctions.h */,
+				288748FA17EC045BE0DD636A13E1C788 /* GCDWebServerFunctions.m */,
+				B660AA9ACDC923928D7CF32EA1CA063F /* GCDWebServerHTTPStatusCodes.h */,
+				3F7B095795A9AE1FC6112EF9E3DC5E79 /* GCDWebServerMultiPartFormRequest.h */,
+				EF75AF5147FFD8BFB5E3849F39061625 /* GCDWebServerMultiPartFormRequest.m */,
+				D1BD5AF9CBA8A02EBCF8F463D6BD032A /* GCDWebServerPrivate.h */,
+				47FAA116DAC2A4452BD61DCDDB0032DF /* GCDWebServerRequest.h */,
+				9A2A1B137942F1411983FAA32E528AB3 /* GCDWebServerRequest.m */,
+				DC202B16784AB46D8FAF08453170F803 /* GCDWebServerResponse.h */,
+				C8C592F8D859995825DE88A11C0C162A /* GCDWebServerResponse.m */,
+				021C18D8FEDA238F7933060EFC439C43 /* GCDWebServerStreamedResponse.h */,
+				FCF2830CA9D3773A70689F7291E13E54 /* GCDWebServerStreamedResponse.m */,
+				7DB99BBCC2AE641146CE542C7496262E /* GCDWebServerURLEncodedFormRequest.h */,
+				FA05954EFEB319604C9C0456BA0EA82A /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		11642910FBE9E454ADCB977376F8410A /* WebDAV */ = {
+			isa = PBXGroup;
+			children = (
+				10E154BECACA6AA9E9277881EA711718 /* GCDWebDAVServer.h */,
+				2F3F740189EDF1F209F0788803B3AA52 /* GCDWebDAVServer.m */,
+			);
+			name = WebDAV;
+			sourceTree = "<group>";
+		};
+		1D8C827E8125532C734B5616571E6EFE /* WebUploader */ = {
+			isa = PBXGroup;
+			children = (
+				CAC0223024B66A3EEA7DF593461C3203 /* GCDWebUploader.h */,
+				076CA1252A2F725DCDCF46B66BFAEA64 /* GCDWebUploader.m */,
+				9FA324B15662AB68835B02B459482B52 /* Resources */,
+			);
+			name = WebUploader;
+			sourceTree = "<group>";
+		};
+		24CC773B48CD733C04A25A9AC77C6538 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				2FA375E7DD653ED5822C291325C4E16A /* NSObject+YYModel.h */,
+				E8264D5621F0D638B334AA48DB6FF383 /* NSObject+YYModel.m */,
+				67D9F4DDB1D43147BD4E8681B9DA73B8 /* YYClassInfo.h */,
+				C670A00F396B2C43EF56C88E0E67C2F3 /* YYClassInfo.m */,
+				B4244819E142D056FBD0BA9F0E93C339 /* YYModel.h */,
+				B7F54A38D73548687E0F45679F03C706 /* Support Files */,
+			);
+			name = YYModel;
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		6E3908C1999F5A99C0ECEE80CBD5772C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DA28C2451036AEA6BC2A1E9F9E03344 /* Pods-AsheniOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		749A147397385D136AF1DAF8137F28FC /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				0F9D54FF4D48C2D18675455816AE4357 /* Core */,
+				906923ECF5DC9ADAFA4CD064CCEE62C6 /* Support Files */,
+				11642910FBE9E454ADCB977376F8410A /* WebDAV */,
+				1D8C827E8125532C734B5616571E6EFE /* WebUploader */,
+			);
+			name = GCDWebServer;
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		7ED039C9679A906B35695DA1A2E2DEF5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BF071F7BF2934640491DA885D4863353 /* CFNetwork.framework */,
+				64B6217A3DAC809A9957762AF7DF1224 /* CoreFoundation.framework */,
+				01696E3F214D178172B16FF754ABBDD1 /* Foundation.framework */,
+				216DEBCBD132830481AD5D3718DE30BA /* MobileCoreServices.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		906923ECF5DC9ADAFA4CD064CCEE62C6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56D6A1CE2846E1DA8D85CFD290B7EE4B /* GCDWebServer.modulemap */,
+				82E12E7C5DF2E2C7A0165462992A605C /* GCDWebServer-dummy.m */,
+				1DFB61212C40B51FEBA7E05A45335AE4 /* GCDWebServer-Info.plist */,
+				B1F0D95049854206C449F83E1DF9C488 /* GCDWebServer-prefix.pch */,
+				BFD42C79E547E54CA3BBC324703533A4 /* GCDWebServer-umbrella.h */,
+				B4F80BD362062DCF83DE9013096E2B22 /* GCDWebServer.debug.xcconfig */,
+				C9B2E7F0BECD32B0DF1C8BE37DA2E772 /* GCDWebServer.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GCDWebServer";
+			sourceTree = "<group>";
+		};
+		9DA28C2451036AEA6BC2A1E9F9E03344 /* Pods-AsheniOS */ = {
+			isa = PBXGroup;
+			children = (
+				B7C05CE20CDF2EAA2074C380DE111A03 /* Pods-AsheniOS.modulemap */,
+				D4F36ADEBF8537C2947DA3732FFC00A2 /* Pods-AsheniOS-acknowledgements.markdown */,
+				4A3D1ADBC4BAECC38BAB57CE37F7B81B /* Pods-AsheniOS-acknowledgements.plist */,
+				28341131457C645E278CFC4F62E0F878 /* Pods-AsheniOS-dummy.m */,
+				5F0619D82F39C2A4BB953D4CAF23A846 /* Pods-AsheniOS-frameworks.sh */,
+				EAC8B9FCF5C0E0557260D4E4C37C881E /* Pods-AsheniOS-Info.plist */,
+				9B6C97918A2EED0E5631183DFEBAFF14 /* Pods-AsheniOS-umbrella.h */,
+				9CFCF66BB73F9DF6DF04CFCE62AF2B8B /* Pods-AsheniOS.debug.xcconfig */,
+				B60A64EBEC49EB7CA3C6B7C03CDCF325 /* Pods-AsheniOS.release.xcconfig */,
+			);
+			name = "Pods-AsheniOS";
+			path = "Target Support Files/Pods-AsheniOS";
+			sourceTree = "<group>";
+		};
+		9FA324B15662AB68835B02B459482B52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1BD9A00C8C6E70354FCA1B14449C425 /* GCDWebUploader.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AD0214168D26F755DBA3FB39FE457CA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B68C1052A3B51DBCF7D960F898AAFA95 /* GCDWebServer.framework */,
+				153473EA987C32BBEFACE861903CBE19 /* Pods_AsheniOS.framework */,
+				E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7F54A38D73548687E0F45679F03C706 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				430C2918FEF2381185030E7A74D2246A /* YYModel.modulemap */,
+				6D457F383FB6D2C1509706B16DE4BC7B /* YYModel-dummy.m */,
+				2CBAAA3BAF38DA0E4FA0DC9421D27A23 /* YYModel-Info.plist */,
+				6D8E86F3A8BCF39E212A97E0C0F72ADF /* YYModel-prefix.pch */,
+				67BA8995DF8D1407A4172BCCC23EEA53 /* YYModel-umbrella.h */,
+				F6D6A97507D34400277B4082B5E1B077 /* YYModel.debug.xcconfig */,
+				D3AF343D84210AE8644B51938D8F8D2C /* YYModel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYModel";
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7ED039C9679A906B35695DA1A2E2DEF5 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				EE4462016CE7BEB740985DF7BE38DB75 /* Pods */,
+				AD0214168D26F755DBA3FB39FE457CA2 /* Products */,
+				6E3908C1999F5A99C0ECEE80CBD5772C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EE4462016CE7BEB740985DF7BE38DB75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				749A147397385D136AF1DAF8137F28FC /* GCDWebServer */,
+				24CC773B48CD733C04A25A9AC77C6538 /* YYModel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36D764117B5D55522B305F85206AFFB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8343D236668058C696596A0A7E6A9CDC /* GCDWebDAVServer.h in Headers */,
+				4DF6A7350ADD17BD0268A411CB5BD12B /* GCDWebServer-umbrella.h in Headers */,
+				DFCC647135CFFD020A13EE21CB669975 /* GCDWebServer.h in Headers */,
+				4A5FC774D0450A4A8FFE04262024A0E9 /* GCDWebServerConnection.h in Headers */,
+				782F0388F7A9B7DEDB103200B978C81B /* GCDWebServerDataRequest.h in Headers */,
+				AD75E96FED0D33D295F3D3A8BF56A9F8 /* GCDWebServerDataResponse.h in Headers */,
+				77CDE68353EE44D46F35055431DD88A2 /* GCDWebServerErrorResponse.h in Headers */,
+				58F90D363D0B57AA96BE11F4ED07E684 /* GCDWebServerFileRequest.h in Headers */,
+				FDC710E3C58B6BD2EE4FC743307BEF13 /* GCDWebServerFileResponse.h in Headers */,
+				D6BA8F39F7E13E77682013B6DFF1A3E3 /* GCDWebServerFunctions.h in Headers */,
+				FBA65AB54B52FA5A337C0FF228DA4686 /* GCDWebServerHTTPStatusCodes.h in Headers */,
+				5AE0F3D55BF5DF3D20D6C5054537EF92 /* GCDWebServerMultiPartFormRequest.h in Headers */,
+				AA93F789F54610A381739B11FB06791B /* GCDWebServerPrivate.h in Headers */,
+				DD6D87BF8A761843BCA300CF4360360E /* GCDWebServerRequest.h in Headers */,
+				141D480033FFF362E456086BDAF2E902 /* GCDWebServerResponse.h in Headers */,
+				3A1D7467C800A0342CA4A1A11F864FE3 /* GCDWebServerStreamedResponse.h in Headers */,
+				C9B7A1EB4C8AA7B0990F4E01DC39FC0C /* GCDWebServerURLEncodedFormRequest.h in Headers */,
+				33FA2FB7B7BBAF0D7ED485FDF46612D3 /* GCDWebUploader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD327B0E0E3964EFE246AEF1E3934FA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA40AA8CBB6200B48F32ED61B3D071EA /* NSObject+YYModel.h in Headers */,
+				A06F8E2BDB1C1C5627C02E09756BD055 /* YYClassInfo.h in Headers */,
+				905A5BD8B0732532496FAA4BCA58958C /* YYModel-umbrella.h in Headers */,
+				6218AABA7D60EEE58F24657D65595CC1 /* YYModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F79A1719B3855B86463DB27CAAD8E533 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C619F8003979DDDC7CAA8FBD67D9B6BE /* Pods-AsheniOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		84B44807A12996D487A4A591A481D6A0 /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D70C6AF1A5C6D966A142F163ED5E01 /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				AD327B0E0E3964EFE246AEF1E3934FA5 /* Headers */,
+				D07439CA80C4B49DA31C1EAA2BCCDE58 /* Sources */,
+				ADEED147B124BE7EB0C717F29107F404 /* Frameworks */,
+				D0761BC20616D62AF0A9C7411474711E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = E460D5B0416D36F66EE8EC89E5D2FA0A /* YYModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9640322519CDC48F75AE2B1103611338 /* Pods-AsheniOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76E88640044D59FF447C4F46204C795E /* Build configuration list for PBXNativeTarget "Pods-AsheniOS" */;
+			buildPhases = (
+				F79A1719B3855B86463DB27CAAD8E533 /* Headers */,
+				ECB7E51894DB02FA561068D0BFA18F21 /* Sources */,
+				2C0607E9A12AA339D7A620D4B74CD81D /* Frameworks */,
+				64144418F7AF8A17869E8DB85C399812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9FDCAB8FE702838C3321A376DFE0DA8 /* PBXTargetDependency */,
+				5A5397CF6523CAB1FF7939E4BEA15782 /* PBXTargetDependency */,
+			);
+			name = "Pods-AsheniOS";
+			productName = "Pods-AsheniOS";
+			productReference = 153473EA987C32BBEFACE861903CBE19 /* Pods_AsheniOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DA4F018F7D03D804A3DEFF5D101CAF4 /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
+			buildPhases = (
+				36D764117B5D55522B305F85206AFFB2 /* Headers */,
+				94842F348AFF47F338F276674874DC2B /* Sources */,
+				55E437CCA6499F74216E93A0F97E79EF /* Frameworks */,
+				5C438EBFAB7DF9188818F1B4C9B9C734 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDWebServer;
+			productName = GCDWebServer;
+			productReference = B68C1052A3B51DBCF7D960F898AAFA95 /* GCDWebServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AD0214168D26F755DBA3FB39FE457CA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */,
+				9640322519CDC48F75AE2B1103611338 /* Pods-AsheniOS */,
+				84B44807A12996D487A4A591A481D6A0 /* YYModel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C438EBFAB7DF9188818F1B4C9B9C734 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945B2781FCAB731D13656981261208D5 /* GCDWebUploader.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64144418F7AF8A17869E8DB85C399812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0761BC20616D62AF0A9C7411474711E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94842F348AFF47F338F276674874DC2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71999101EF4679D675412640441098A5 /* GCDWebDAVServer.m in Sources */,
+				67DBF6A087D7F6E3170045521239100E /* GCDWebServer-dummy.m in Sources */,
+				199B9B8BE4A3C277C8151766B7E50A52 /* GCDWebServer.m in Sources */,
+				FB9F779B420C2EADFC026FAA2114CED6 /* GCDWebServerConnection.m in Sources */,
+				5395EDA5B90E1D692F3C83BF4892CBC4 /* GCDWebServerDataRequest.m in Sources */,
+				48B1F9E3A1F1DB4E55664552707D0BC5 /* GCDWebServerDataResponse.m in Sources */,
+				3C640E568D13FA0A103376578B43C14F /* GCDWebServerErrorResponse.m in Sources */,
+				4694EB7427EC9AF28853085BB9A5EA35 /* GCDWebServerFileRequest.m in Sources */,
+				AAA1AF1672A73A4365536A7904DECCA9 /* GCDWebServerFileResponse.m in Sources */,
+				2013CBABA76DD79EE796E7F569BE8D53 /* GCDWebServerFunctions.m in Sources */,
+				CB07A01C277A01FFB0E88BD77A94D9F2 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				52BDB3A4765CBB8AFB57B09F3335F5F8 /* GCDWebServerRequest.m in Sources */,
+				D2E0AD6D3BA85120A6873081B49638CB /* GCDWebServerResponse.m in Sources */,
+				5924C06541A0430C69AC0A4B68CF1004 /* GCDWebServerStreamedResponse.m in Sources */,
+				539B513546329AAA18439DA255170947 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				BB3A74BFDE9C96EBC8BF94F9C547850D /* GCDWebUploader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D07439CA80C4B49DA31C1EAA2BCCDE58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4381C0C2775DF318539274584275BCB1 /* NSObject+YYModel.m in Sources */,
+				C29C1BF86EA5C3DBD7AB893ACF8E2B17 /* YYClassInfo.m in Sources */,
+				8DD422F65B364DB9C1EAE655653561A7 /* YYModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECB7E51894DB02FA561068D0BFA18F21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21D1B921213C3724A18648545CE7775C /* Pods-AsheniOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A5397CF6523CAB1FF7939E4BEA15782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 84B44807A12996D487A4A591A481D6A0 /* YYModel */;
+			targetProxy = E31447C93BBF44FEEF64DDD0E1BF887D /* PBXContainerItemProxy */;
+		};
+		E9FDCAB8FE702838C3321A376DFE0DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = AD904F32069787EFB2DFFE05EB82F5BD /* GCDWebServer */;
+			targetProxy = 25F4CA5DA28BB47B6A3B7B01AA1E0687 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00FE5F0263D4D857B5008CAE6DB267CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CFCF66BB73F9DF6DF04CFCE62AF2B8B /* Pods-AsheniOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AsheniOS/Pods-AsheniOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AsheniOS/Pods-AsheniOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B3417AB832C465F43674E4238B5CBE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3AF343D84210AE8644B51938D8F8D2C /* YYModel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7F5F3077023203D66DBC73A4D9C97BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6D6A97507D34400277B4082B5E1B077 /* YYModel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYModel/YYModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YYModel/YYModel.modulemap";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		94EA811983C36ADC129D97910817735B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F80BD362062DCF83DE9013096E2B22 /* GCDWebServer.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A57678CB42476613C238D0659A573265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B2E7F0BECD32B0DF1C8BE37DA2E772 /* GCDWebServer.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/GCDWebServer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D997A78A8C99257C7CCBCFD09DE9716B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60A64EBEC49EB7CA3C6B7C03CDCF325 /* Pods-AsheniOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AsheniOS/Pods-AsheniOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AsheniOS/Pods-AsheniOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D70C6AF1A5C6D966A142F163ED5E01 /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F5F3077023203D66DBC73A4D9C97BED /* Debug */,
+				2B3417AB832C465F43674E4238B5CBE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76E88640044D59FF447C4F46204C795E /* Build configuration list for PBXNativeTarget "Pods-AsheniOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00FE5F0263D4D857B5008CAE6DB267CA /* Debug */,
+				D997A78A8C99257C7CCBCFD09DE9716B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DA4F018F7D03D804A3DEFF5D101CAF4 /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94EA811983C36ADC129D97910817735B /* Debug */,
+				A57678CB42476613C238D0659A573265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
