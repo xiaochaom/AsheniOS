@@ -9,6 +9,8 @@
 寻找其他的测试手段,先将 SDK 集成到 demo 中,demo 内置一个 HTTP server,demo 启动时反射扫描被测的 SDK 类,启动 HTTP server,测试人员以约定的参数格式发送 HTTP 请求到 demo 的 server 中,server 反射调用 SDK 对应的接口,返回 同步/异步 接口的返回值,有了返回值就可以用来做断言啦.
 
 ### AsheniOS
+![简易架构图](https://user-images.githubusercontent.com/21215047/112605291-1c686c00-8e52-11eb-9a80-87458ad50db6.jpg)
+
 iOS 因为语言不太熟悉,未找到办法同时获取到参数类型和参数名称,索性写了个 Python 脚本扫描被测的 SDK 的 .h 文件, 使用正则扣出需要的数据,因每人编码习惯不同,场景不同,如果有脚本报错的地方,就需要自己匹配一下,预计的参数格式为
 
 ```
@@ -47,7 +49,8 @@ file_name_list = [
 ashenConst.ashenClassDic = @{@"Test.h":[Test new]};
 ```
 
-4. 在 xcode 中, Build Phases 添加一个 build 步骤,拖动到第一步,run script, 写入 `python3 read_class.py`
+4. 在 xcode 中, Build Phases 添加一个 build 步骤,拖动到第一步,run script, 写入 `python3 read_class.py`<br>![WX20210326-161939](https://user-images.githubusercontent.com/21215047/112605330-28542e00-8e52-11eb-8edf-709cdaab371b.png)
+
 5. 运行 App, App 中会显示设备的 host,例如 192.168.1.100 , 使用浏览器访问 `http://192.168.1.100:9999/getAllInterface`,就会显示出已注册类的所有函数
 6. 实现异步回调接口的 callback. SDK 中可能含有大量的异步回调接口,回调的 callback 可能有很多的中间状态,框架没有办法判断触发了哪一个判断代表了本次接口调用完毕,所以如果是异步接口的话,回调需要用户自己实现.回调在 `utils/AshenCallBack.m` 文件中, 目前的设计中回调分为两种,一种为中间状态,一种为结束状态,根据参数名区分,中间状态不会认为接口执行结束,但是 iOS 没找到办法动态生成 block,所以需要定义两套
 
