@@ -155,6 +155,12 @@
                 // 获取参数列表
                 
                 SEL sel =  NSSelectorFromString([interfaceName stringByReplacingOccurrencesOfString:@"/"withString:@""]);
+                if (![[[[AshenConst sharedConst]ashenClassDic]allKeys]containsObject:keyIndex]){
+                    NSMutableDictionary* errorDic = [NSMutableDictionary new];
+                    [errorDic setValue:[@"未找到 class: " stringByAppendingString:keyIndex] forKey:ashenCode];
+                    [errorDic setValue:@(ashenErrorCode) forKey:ashenMessage];
+                    return [GCDWebServerDataResponse responseWithJSONObject:errorDic];
+                }
                 id classInstance = [[[AshenConst sharedConst]ashenClassDic] valueForKey:keyIndex];
                 NSMethodSignature *signature = [classInstance methodSignatureForSelector:sel];
                 NSInvocation* invocation = [NSInvocation invocationWithMethodSignature:signature];
@@ -180,7 +186,7 @@
                 }
                 [invocation invoke];
                 if (![returnType isEqual:@"void"] && !blockInParam){
-                    id rep = nil;
+                    __autoreleasing id rep = nil;
                     [invocation getReturnValue:&rep];
                     NSDictionary *json = [rep yy_modelToJSONObject];
                     [[AshenConst sharedConst].ashenResponseDic setValue:json  forKey:ashenMessage];
